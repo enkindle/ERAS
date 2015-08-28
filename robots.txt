@@ -1,0 +1,61 @@
+# Allow Archive.org to save snapshots of everything
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow: / 
+
+# Tame yahoo... it tends to eat a ton of resources without a delay
+User-agent: Slurp
+Crawl-delay: 60
+
+#list individual pages and files here that all bots should ignore, as well as group extentions.
+#If you re-write everything to .html, you can disallow *.php, but note that if you don't have a CRR for custom pages, those will be blocked.
+
+User-agent: *
+Disallow: /forum/cgi-bin/
+Disallow: /forum/clientscript/
+Disallow: /forum/cpstyle/
+Disallow: /forum/customavatars/
+Disallow: /forum/customprofilepics/
+Disallow: /forum/editpost.php
+Disallow: /forum/gamercard.php
+Disallow: /forum/images/
+Disallow: /forum/includes/
+Disallow: /forum/inlinemod.php
+Disallow: /forum/install/
+Disallow: /forum/member.php
+Disallow: /forum/memberlist.php
+Disallow: /forum/newreply.php
+Disallow: /forum/newthread.php
+Disallow: /forum/payments.php
+Disallow: /forum/printthread.php
+Disallow: /forum/subscription.php
+Disallow: /forum/payments.php
+Disallow: /forum/profile.php
+Disallow: /forum/faq.php
+Disallow: /forum/calendar.php
+Disallow: /forum/private.php
+Disallow: /forum/report.php
+Disallow: /forum/sendmessage.php
+Disallow: /forum/search.php
+Disallow: /forum/showgroups.php
+Disallow: /forum/showpost.php
+Disallow: /forum/reputation.php
+Disallow: /forum/report.php
+Disallow: /forum/register.php
+Disallow: /forum/login.php
+Disallow: /forum/faq.php
+Disallow: /forum/image.php
+Disallow: /forum/cron.php
+Disallow: /forum/joinrequests.php
+Disallow: /forum/usercp.php
+Disallow: /forum/usernote.php
+
+User-agent: Mediapartners-Google
+Allow: /forum/member.php
+Allow: /forum/private.php
+Allow: /forum/usercp.php
+
+#Finally, list the path to your sitemap:
+#Sitemap: http://www.albertareptiles.com/forum/sitemap_index.xml.gz
